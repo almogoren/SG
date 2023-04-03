@@ -14,7 +14,7 @@ ipAddresses: ec2.IpAddresses.cidr('10.0.0.0/32')
 })
   }
 }
-   // 👇 Create a SG for a web server
+   // Create a SG for a web server
    const webserverSG = new ec2.SecurityGroup(this, 'web-server-sg', {
     vpc,
     allowAllOutbound: true,
